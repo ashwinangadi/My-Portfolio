@@ -6,8 +6,8 @@ export const Certification = () => {
         <section className="container mx-auto h-screen flex items-center justify-center">
             <div className="flex flex-col">
                 <div className="text-base font-sans mb-10 flex items-end">
-                    <h1 className="text-green text-2xl font-mono">01.</h1>
-                    <h2 className="mx-2  text-3xl text-lightest-slate font-bold">What & Where I've Learned</h2> 
+                    <h1 className="text-green text-2xl font-mono">02.</h1>
+                    <h2 className="mx-2  text-3xl text-lightest-slate font-bold">Certificates I Earned</h2> 
                 </div>
                 <div className="grid grid-cols-5 gap-4 ">
                     <div className="col-span-3">
