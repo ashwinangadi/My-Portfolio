@@ -1,7 +1,8 @@
 import './App.css'
 import { Name } from './Component/Name'
-import {About} from './Component/About'
+import { About } from './Component/About'
 import { Certification } from './Component/Certification'
+import { Project } from './Component/Project'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Name/>
         <About/>
         <Certification/>
+        <Project/>
       </div>
       
     </>

@@ -1,22 +1,30 @@
 export const Project = () => {
   
-
+   
     return (
       <>
-        <section className="container mx-auto px-[10%] h-screen flex items-center justify-center">
-            <div className="flex flex-col">
+        <section className=" container mx-auto px-[10%] h-screen flex items-center ">
+            <div className="flex flex-col w-screen">
                 <div className="text-base font-sans mb-10 flex items-end">
-                    <h1 className="text-green text-2xl font-mono">01.</h1>
-                    <h2 className="mx-2  text-3xl text-lightest-slate font-bold">About Me</h2> 
+                    <h1 className="text-green text-2xl font-mono">03.</h1>
+                    <h2 className="mx-2  text-3xl text-lightest-slate font-bold">Some Things I’ve Built</h2> 
                 </div>
-                <div className="grid grid-cols-5 gap-4 ">
-                    <div className="col-span-3">
-                        <h2 className="text-xl font-sans text-slate">Hello! My name is Ashwin and I enjoy creating things that live on the internet. I recently began to be fascinated by web development </h2>
-                        <h2 className=" font-sans text-[#ccd6f6] font-bold">Ashwin Angadi.</h2>
-                    </div>
-                    <div>
-                        <h3 className="text-7xl font-sans text-[#8892b0] font-bold mt-2">I build things for the web.</h3>
-                    </div>
+                {/* Projects area */}
+                <div className="grid justify-items-end">
+                    {/* Recipe Preject */}
+                    <div className="relative grid grid-cols-12 gap-2.5 content-center">
+                        <div className="absolute text-white col-span-7 grid justify-items-end z-10 ">
+                            <p>Featured Project</p>
+                            <h2>Recipe Master</h2>
+                            <div className="h-20 w-[50%] border border-white"> 
+                                sdsssssssssss sssssssssssss sssssssssssssss ss sssssssss ssssss ssssss sssssss sssssss ssssss 
+                                aaaaa sdfgfffffffffffff  ddd ddddddddd ddddddddd ddddddd   
+                            </div>
+                        </div>
+                        <div className="col-span-7">
+                            <img src="src\Images\recipe.png" alt="Recipe project window"  />
+                        </div>
+                    </div>                    
                 </div>
             </div>
         </section>
