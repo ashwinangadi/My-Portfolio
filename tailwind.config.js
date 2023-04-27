@@ -7,6 +7,7 @@ export default {
   theme: {
     colors: {
       "dark-navy": "#020c1b",
+      "red": "#d62828",
       "navy": "#0a192f",
       'light-navy': "#112240",
       'lightest-navy': "#233554",
@@ -19,7 +20,7 @@ export default {
       'green': "#64ffda",
       'green-tint': "rgba(100,255,218,0.1)",
       'pink': "#f57dff",
-      "blue": "#57cbff",
+      "blue": "#57cbff"
     },
   },
   plugins: [],
