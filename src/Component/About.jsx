@@ -16,7 +16,8 @@ export const About = () => {
                         <h2 className=" font-sans text-[#ccd6f6] font-bold">Ashwin Angadi.</h2>
                     </div>
                     <div className="col-span-2">
-                        <h3 className="text-7xl font-sans text-[#8892b0] font-bold mt-2">I build things for the web.</h3>
+                        <h3 className="text-7xl font-sans text-[#8892b0] font-bold mt-2">Image here
+                        </h3>
                     </div>
                 </div>
             </div>

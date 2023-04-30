@@ -3,24 +3,17 @@ export const Contact = () => {
 
     return (
       <>
-        <section className="container mx-auto px-[10%] h-screen flex items-center justify-center max-w-5xl">
-            <div className="flex flex-col">
-                <div className="text-base font-sans mb-10 flex items-center">
-                    <h1 className="text-green text-2xl font-mono">01.</h1>
-                    <h2 className="mx-2  text-3xl text-lightest-slate font-bold">About Me</h2> 
-                    <h3 className="mx-5 border border-lightest-navy w-[300px]"> </h3>
+        <section className="container mx-auto p-[8%] h-full flex flex-col items-center justify-center max-w-4xl py-44 mt-32 mb-10">
+                <div className="text-base mb-10 flex items-center justify-center text-green font-mono text-lg font-normal mb-5 mt-2.5 w-full">
+                    <h1 className="">04.</h1>
+                    <h2 className="mx-2">What's Next?</h2>
                 </div>
-                <div className="grid grid-cols-5 gap-4 ">
-                    <div className="col-span-3">
-                        <h2 className="text-xl font-sans text-slate">Hello! My name is Ashwin and I enjoy creating things that live on the internet. I recently began to be fascinated by web development </h2>
-                        <h2 className=" font-sans text-[#ccd6f6] font-bold">Ashwin Angadi.</h2>
-                    </div>
-                    <div>
-                        <h3 className="text-7xl font-sans text-[#8892b0] font-bold mt-2">I build things for the web.</h3>
-                    </div>
-                </div>
-            </div>
+                <h2 className="font-bold text-lightest-slate mb-10 text-5xl font-sans">Get In Touch</h2>
+                <p className="font-sans text-center text-slate text-lg antialiased ">I am looking for a company willing to offer me a placement among their developers. In return, I offer my full commitment and be a pleasant and friendly addition to your team. I am therefore currently looking for for any new opportunities as a <span className="font-mono text-blue">front-end developer</span>.</p>
+                <div className="relative h-14 w-36  bg-green mt-20 rounded-md"><a className="alsolute z-10 bg-[#0a192f] h-14 w-36 border text-green grid place-content-center font-mono rounded-md transition-all hover:-translate-x-1 hover:-translate-y-1 duration-150" href="mailto:ashwin.angadi1@gmail.com" rel="noopener noreferrer" target="_blank">Say Hello</a></div>
         </section>
+
+        
       </>
     )
   }
