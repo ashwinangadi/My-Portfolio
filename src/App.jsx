@@ -6,13 +6,15 @@ import { Project } from './Component/Project'
 import { BrowserRouter } from 'react-router-dom'
 import { Contact } from './Component/Contact'
 import { Social } from './Component/Social'
+import { Navbar } from './Component/Nav'
 
 
 function App() {
   return (
     <>
       <Social/>
-      <div className="relative container mx-auto px-[10%]">
+      <div className="relative">
+        <Navbar/>
         <Name/>
         <About/>
         <BrowserRouter>
