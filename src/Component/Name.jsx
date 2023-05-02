@@ -3,7 +3,7 @@ export const Name = () => {
 
     return (
       <>
-        <section className="container mx-auto px-[10%] h-screen flex items-center justify-center max-w-5xl">
+        <section id="Name" className="container mx-auto px-[10%] h-screen flex items-center justify-center max-w-7xl">
             <div className="flex flex-col">
                 <div className="text-base font-mono text-green mb-3 text-lg">
                     <h1>Hi, my name is</h1> 
