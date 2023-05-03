@@ -1,15 +1,15 @@
-import { IdContext } from '../Component/Context'
+
 export const Contact = () => {
   
-  const { componentId, setComponentId } = useContext(IdContext)
+  
   
     return (
       <>
         <section id="Contact" className="container mx-auto p-[8%] h-full flex flex-col items-center justify-center max-w-4xl py-44 mt-10 mb-10">
-          {setComponentId()}
+          
                 <div className="text-base mb-10 flex items-center justify-center text-green font-mono text-lg font-normal mb-5 mt-2.5 w-full">
                     <h1 className="">04.</h1>
-                    <h2 className="mx-2">What's Next?</h2>
+                    <h2 className="mx-2">What&apos;s Next?</h2>
                 </div>
                 <h2 className="font-bold text-lightest-slate mb-10 text-5xl font-sans">Get In Touch</h2>
                 <p className="font-sans text-center text-slate text-lg antialiased ">I am looking for a company willing to offer me a placement among their developers. In return, I offer my full commitment and be a pleasant and friendly addition to your team. I am therefore currently looking for for any new opportunities as a <span className="font-mono text-blue">front-end developer</span>.</p>

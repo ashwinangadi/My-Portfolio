@@ -21,7 +21,7 @@ export const Social = () => {
                 <div className=" border h-28 w-0 text-center mt-48" style={{writingMode:"vertical-rl"}}></div>
             </div>
             <div className="fixed bottom-0 right-24 flex flex-col items-center justify-center font-mono text-sm tracking-widest space-y-8">
-                <div className="hover:text-green hover:-translate-y-1 duration-150" style={{writingMode:"vertical-rl"}}>ashwin.angadi1@gmail.com</div>
+                <div className="hover:text-green hover:-translate-y-1 duration-150" style={{writingMode:"vertical-rl"}}><a href="mailto:ashwin.angadi1@gmail.com" rel="noopener noreferrer" target="_blank">ashwin.angadi1@gmail.com</a></div>
                 <div className="hover:text-green hover:-translate-y-1 duration-150" style={{writingMode:"vertical-rl"}}>+917899599229</div>
                 <div className=" border h-28 w-0" style={{writingMode:"vertical-rl"}}></div>
             </div>

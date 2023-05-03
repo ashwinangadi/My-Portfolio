@@ -8,7 +8,7 @@ export const Project = () => {
    
     return (
       <>
-        <section className="container mx-auto h-full grid justify-items-start content-center w-full py-24 max-w-5xl">
+        <section id='Project' className="container mx-auto h-full grid justify-items-start content-center w-full py-24 max-w-5xl">
             
                 <div className="text-base font-sans mb-10 flex items-center w-full">
                     <h1 className="text-green text-2xl font-mono">03.</h1>
