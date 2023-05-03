@@ -5,7 +5,7 @@ export const Contact = () => {
   
     return (
       <>
-        <section id="Contact" className="container mx-auto p-[8%] h-full flex flex-col items-center justify-center max-w-4xl py-44 mt-10 mb-10">
+        <section id="Contact" className="container mx-auto p-[8%] h-full flex flex-col items-center justify-center max-w-4xl py-32  mb-10">
           
                 <div className="text-base mb-10 flex items-center justify-center text-green font-mono text-lg font-normal mb-5 mt-2.5 w-full">
                     <h1 className="">04.</h1>
