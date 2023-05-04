@@ -9,7 +9,7 @@ export const Social = () => {
 
     return (
       <>
-        <section className="absolute text-light-slate flex flex-col z-50">
+        <section className="absolute text-light-slate flex flex-col z-50 hidden md:block">
             <div className="fixed bottom-0 left-20 flex flex-col items-center justify-center space-y-8 font-bold">
             
                 <div className="hover:text-green hover:-translate-y-1 duration-150"><a  href="https://www.linkedin.com/in/ashwin-angadi/" aria-label="Linkedin" target="_blank" rel="noreferrer"><FiLinkedin className='h-6 w-6'/></a></div>

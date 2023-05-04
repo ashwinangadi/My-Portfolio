@@ -6,23 +6,28 @@ import { Project } from './Component/Project'
 import { Contact } from './Component/Contact'
 import { Social } from './Component/Social'
 import { Navbar } from './Component/Navbar'
+import { IdContext } from './Component/AppContext'
+import { useContext } from 'react'
 
 
 
-function App() {
+
+const App = () => {
+  const { modal } = useContext(IdContext)
   return (
     <>
       
         <Social/>
-        <div className="relative">
-            <Navbar/>
+        <Navbar/>
+        <div className={`relative container mx-auto ${modal && "blur"}`}>
+            
             <Name/>
             <About/> 
-            <Certification/>
-            <Project/>
+            {/* <Certification/>
+            <Project/> */}
             <Contact/>
         </div>
-      
+       
     </>
   )
 }
