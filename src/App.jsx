@@ -16,18 +16,16 @@ const App = () => {
   const { modal } = useContext(IdContext)
   return (
     <>
-      
-        <Social/>
-        <Navbar/>
-        <div className={`relative container mx-auto ${modal && "blur"}`}>
-            
-            <Name/>
-            <About/> 
-            {/* <Certification/>
-            <Project/> */}
-            <Contact/>
-        </div>
-       
+      <Navbar/>
+      <div className={`relative container mx-auto ${modal && "blur-sm"}`} >
+        
+        <Name/>
+        <About/> 
+        <Certification/>
+        <Project/>
+        <Contact/>
+      </div>
+      <Social/>  
     </>
   )
 }
