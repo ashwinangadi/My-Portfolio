@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from 'react';
 import pdf from "./resume.pdf"
 import { IdContext } from './AppContext'
 
+
 import { FiGithub } from 'react-icons/fi';
 import { FiLinkedin } from 'react-icons/fi';
 import { FiTwitter } from 'react-icons/fi';
@@ -50,8 +51,8 @@ export const Navbar = () => {
     return (
       <>
         <section > 
-          <div className='hidden md:block'>
-            <div className={`fixed bg-navy flex justify-center items-center font-mono space-x-16 h-20 w-screen z-50 tracking-widest backdrop-blur-md bg-navy/70  ${show && 'hidden'}`} >
+          <div className='hidden md:block '>
+            <div className={`fixed bg-red flex justify-center items-center font-mono space-x-16 h-20 w-screen z-50 tracking-widest backdrop-blur-md bg-navy/70 transition-all duration-500  ${show && 'hidden '}`} >
               <ol  className="flex space-x-16 list-decimal text-md ">
                 <li className="text-green"><a href="/#About" ><span className="text-lightest-slate hover:text-green">About</span></a></li>
                 <li className="text-green"><a href="/#Certification" ><span className="text-lightest-slate hover:text-green">Certificates</span></a></li>
