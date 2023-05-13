@@ -7,7 +7,7 @@ export const About = () => {
 
     return (
       <>
-        <section id="About" className="container mx-auto  md:h-full flex flex-col items-center justify-center w-full m-1 md:max-w-4xl py-20 px-5 md:px-0 ">
+        <section id="About" className="element container mx-auto  md:h-full flex flex-col items-center justify-center w-full m-1 md:max-w-4xl py-20 px-5 md:px-0 ">
              <div className="flex flex-col">
                 <div className="text-base font-sans mb-10 flex items-center">
                     <h1 className="text-green text-xl md:text-2xl font-mono grid place-self-end">01.</h1>

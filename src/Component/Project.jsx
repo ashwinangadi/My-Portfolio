@@ -8,7 +8,7 @@ export const Project = () => {
    
     return (
       <>
-        <section id='Project' className="container mx-auto h-full grid justify-items-start content-center w-full  py-20  max-w-5xl px-5 md:px-0">
+        <section id='Project' className=" element container mx-auto h-full grid justify-items-start content-center w-full  py-20  max-w-5xl px-5 md:px-0">
             
                 <div className="text-base font-sans mb-10 flex items-center w-full ">
                     <h1 className="text-green text-xl md:text-2xl font-mono grid place-self-end">03.</h1>
@@ -23,7 +23,7 @@ export const Project = () => {
                     {/* Recipe Project */}
                     <li className="relative md:grid md:grid-cols-12 w-full h-full mb-24 md:text-end ">
                         <div className=" md:relative md:col-start-1 md:col-span-7 bg-green-tint md:bg-[#8ed5c4] rounded-md md:hover:-translate-x-6 md:hover:scale-100 md:duration-300 ">
-                            <a href="https://react-recipe-master.web.app/" aria-label="External Link" rel="noopener noreferrer" target="_blank"><img src={RecipeImage} alt="Recipe project window" className=" mix-blend-multiply md:hover:mix-blend-normal rounded-md " /></a>
+                            <a href="https://react-recipe-master.web.app/" aria-label="External Link" rel="noopener noreferrer" target="_blank"><img src={RecipeImage} alt="Recipe project window" className=" mix-blend-multiply hover:mix-blend-normal rounded-md " /></a>
                         </div>
                         <div className="absolute md:col-start-7 md:col-span-6 md:grid md:place-self-center px-2 md:px-0 -mt-20 md:mt-0">
                             <p className="my-2.5 font-mono text-green text-sm">Featured Project</p>

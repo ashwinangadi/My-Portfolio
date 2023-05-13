@@ -26,7 +26,7 @@ export const Certification = () => {
 
     return (
       <>
-        <section id="Certification" className="container mx-auto h-full flex items-center justify-center max-w-3xl px-5 md:px-0 py-20">
+        <section id="Certification" className="element container mx-auto h-full flex items-center justify-center max-w-3xl px-5 md:px-0 py-20">
             <div className="flex flex-col">
                 <div className="text-base font-sans mb-10 flex items-center">
                     <h1 className="text-green text-xl md:text-2xl font-mono grid place-self-end">02.</h1>

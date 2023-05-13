@@ -9,7 +9,7 @@ export const Social = () => {
 
     return (
       <>
-        <section className="lg:absolute text-light-slate flex flex-col justify-center  z-50">
+        <section id='Social' className=" lg:absolute text-light-slate flex flex-col justify-center  z-50">
             <div className="lg:fixed lg:bottom-0 lg:left-20 flex lg:flex-col lg:items-center justify-around lg:justify-center lg:space-x-0 lg:space-y-8 mt-10 lg:mt-0 mb-16 lg:mb-0 font-bold">
             
                 <div className="hover:text-green hover:-translate-y-1 duration-150"><a  href="https://www.linkedin.com/in/ashwin-angadi/" aria-label="Linkedin" target="_blank" rel="noreferrer"><FiLinkedin className='h-6 w-6'/></a></div>
