@@ -52,20 +52,20 @@ export const Navbar = () => {
       <>
         <section > 
           <div className='hidden md:block '>
-            <div className={`fixed bg-red flex justify-center items-center font-mono space-x-16 h-20 w-screen z-50 tracking-widest backdrop-blur-md bg-navy/70 transition-all duration-500  ${show && 'hidden '}`} >
+            <div className={`fixed flex justify-center items-center font-mono space-x-16 h-20 w-screen z-50 tracking-widest backdrop-blur-md bg-navy/70 transition-all duration-500  ${show && 'hidden '}`} >
               <ol  className="flex space-x-16 list-decimal text-md ">
                 <li className="text-green"><a href="/#About" ><span className="text-lightest-slate hover:text-green">About</span></a></li>
                 <li className="text-green"><a href="/#Certification" ><span className="text-lightest-slate hover:text-green">Certificates</span></a></li>
                 <li className="text-green"><a href="/#Project" ><span className="text-lightest-slate hover:text-green">Projects</span></a></li>
                 <li className="text-green"><a href="/#Contact" ><span className="text-lightest-slate hover:text-green">Contact</span></a></li>
               </ol>
-              <div className="relative h-10 w-24 bg-green rounded-md "><a className="alsolute z-10 bg-[#0a192f] h-10 w-24 border text-green grid place-content-center font-mono rounded-md transition-all hover:-translate-x-1 hover:-translate-y-1 duration-150" href={pdf} rel="noopener noreferrer" target="_blank">Resume</a></div>
+              <div className="relative h-10 w-24 bg-green rounded-md "><a className="alsolute  bg-[#0a192f] h-10 w-24 border text-green grid place-content-center font-mono rounded-md transition-all hover:-translate-x-1 hover:-translate-y-1 duration-150" href={pdf} rel="noopener noreferrer" target="_blank">Resume</a></div>
             </div>
           </div> 
         
-          <div className={`fixed bg-navy h-20 flex items-center justify-end font-mono w-full md:hidden tracking-widest backdrop-blur-md bg-navy/70 z-50 ${show && 'hidden'}`} > 
+          <div className={`fixed bg-navy h-20 flex items-center justify-end font-mono w-full md:hidden tracking-widest backdrop-blur-md bg-navy/70 z-10 ${show && 'hidden'}`} > 
             
-            <button type="button" className='me-10 cursor-pointer text-green flex items-center h-10 w-10 justify-center z-50' onClick={()=>modal==true? setModal(false): setModal(true)}>
+            <button type="button" className='me-10 cursor-pointer text-green flex items-center h-10 w-10 justify-center z-50' onClick={()=>{modal==true? setModal(false): setModal(true);}}>
             {!modal ? (
                   <svg
                     className="block h-10 w-10"

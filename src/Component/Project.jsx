@@ -18,12 +18,12 @@ export const Project = () => {
 
 
                 {/* Projects area */}
-                <ul className="flex flex-col" >
+                <ul className="flex flex-col ">
                     
                     {/* Recipe Project */}
-                    <li className="relative md:grid md:grid-cols-12 w-full h-full mb-24 md:text-end ">
-                        <div className=" md:relative md:col-start-1 md:col-span-7 bg-green-tint md:bg-[#8ed5c4] rounded-md md:hover:-translate-x-6 md:hover:scale-100 md:duration-300 ">
-                            <a href="https://react-recipe-master.web.app/" aria-label="External Link" rel="noopener noreferrer" target="_blank"><img src={RecipeImage} alt="Recipe project window" className=" mix-blend-multiply hover:mix-blend-normal rounded-md " /></a>
+                    <li className="relative md:grid md:grid-cols-12 w-full h-full mb-24 md:text-end  " >
+                        <div className=" md:relative md:col-start-1 md:col-span-7 bg-green-tint md:bg-[#8ed5c4] rounded-md md:hover:-translate-x-6 md:hover:scale-100 md:duration-300 " >
+                            <a href="https://react-recipe-master.web.app/" aria-label="External Link" rel="noopener noreferrer" target="_blank"  ><img src={RecipeImage} alt="Recipe project window" className="mix-blend-multiply hover:mix-blend-normal rounded-md "  /></a>
                         </div>
                         <div className="absolute md:col-start-7 md:col-span-6 md:grid md:place-self-center px-2 md:px-0 -mt-20 md:mt-0">
                             <p className="my-2.5 font-mono text-green text-sm">Featured Project</p>
@@ -47,7 +47,7 @@ export const Project = () => {
 
                     {/* Trade Watchlist Project */}
                     <li className="relative md:grid md:grid-cols-12 w-full h-full mb-24 mt-32 md:mt-0">
-                        <div className="md:relative md:col-start-6 md:col-span-7 bg-green-tint md:bg-[#8ed5c4] rounded-md md:hover:-translate-x-6 md:hover:scale-100 md:duration-300">
+                        <div className="md:relative md:col-start-6 md:col-span-7 bg-green-tint md:bg-[#8ed5c4] rounded-md md:hover:translate-x-6 md:hover:scale-100 md:duration-300">
                             <a href="https://trade-watchlist.web.app/" aria-label="External Link" rel="noopener noreferrer" target="_blank"><img src={TradeImage} alt="Recipe project window" className="mix-blend-multiply md:hover:mix-blend-normal rounded-md" /></a>
                         </div>
                         

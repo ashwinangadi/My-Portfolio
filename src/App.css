@@ -2,7 +2,7 @@ body{
   background-color: #0a192f;
 }
 
-@keyframes enter-animation {
+/* @keyframes enter-animation {
   0% {
     position: relative;
     transform: translateY(150px);
@@ -18,18 +18,17 @@ body{
   .image-animation {
     animation: enter-animation 1s 1;
   }
-}
+} */
 
-/* .element{
-  position: relative;
-  transform: translateY(100px);
-  
+.element{
+  position: relative; 
   transition: 1s all ease;
+  opacity: 0;
 }
 
 .element.active{
-  transform: translateY(0);
+  
   opacity: 1;
-} */
+}
 
 

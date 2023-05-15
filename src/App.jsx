@@ -14,7 +14,7 @@ import { useContext } from 'react'
 
 const App = () => {
 
-  const { modal } = useContext(IdContext)
+  const { modal, setModal } = useContext(IdContext)
 
   const cards= document.querySelectorAll(".element")
   console.log(cards)
@@ -22,8 +22,8 @@ const App = () => {
   const observer = new IntersectionObserver(obj => {
     
     obj.forEach(item=>{
-      item.target.classList.toggle("image-animation", item.isIntersecting)
-      // if(item.isIntersecting) observer.unobserve(item.target)
+      item.target.classList.toggle("active", item.isIntersecting)
+       if(item.isIntersecting) observer.unobserve(item.target)
     });
   },{
     rootMargin: "100px",
@@ -59,7 +59,7 @@ const App = () => {
   return (
     <>
       <Navbar/>
-      <div className={`relative container mx-auto ${modal && "blur-sm"}`} >
+      <div className={`relative container mx-auto ${modal && "blur-sm"}`}  onClick={e => e.stopPropagation()}>
         
         <Name/>
         <About/> 
