@@ -43,7 +43,7 @@ export const Project = () => {
                             </div>
                         </div>
                     </li>
-
+                    
 
                     {/* Trade Watchlist Project */}
                     <li className="relative md:grid md:grid-cols-12 w-full h-full mb-24 mt-32 md:mt-0">

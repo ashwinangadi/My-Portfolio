@@ -101,7 +101,7 @@ export const Navbar = () => {
                 )}
                 
             </button>
-            <div className={`absolute flex flex-col items-center justify-center bg-light-navy md:hidden shadow-lg h-screen w-[60%] right-0 top-0 shadow-xl shadow-lightest-navy  ${!modal && 'hidden'}`}>
+            <div className={`absolute flex flex-col items-center justify-center bg-light-navy md:hidden h-screen w-[60%] right-0 top-0 shadow-2xl shadow-lightest-navy  ${!modal && 'hidden'}`}>
               <div className='flex flex-col items-center justify-start space-y-12 '>
                 
                 {/* Menu */}
