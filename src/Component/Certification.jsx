@@ -37,9 +37,9 @@ export const Certification = () => {
 
                     {/* Nav section */}
                     <div className=" md:w-[45%] h-full md:border-l-1 flex md:flex-col">
-                        <p className= {`${ rwd ? "text-green border-b-2 md:border-b-0 md:border-l-2" : "text-slate" } md:px-5 py-5 md:py-0 text-center border-b md:border-b-0 md:border-l font-mono text-sm  h-14 flex items-center justify-center cursor-pointer`} onClick={showResponsive}>Responsive Web Design</p>
-                        <p className={`${ jsdsa ? "text-green border-b-2 md:border-b-0 md:border-l-2" : "text-slate" } px-5 pb-5 md:pb-0 text-center border-b md:border-b-0 md:border-l font-mono text-sm  h-14 flex items-center justify-center cursor-pointer`} onClick={showJavascript}>Javascript Algorithms & Data Structures</p>
-                        <p className={`${ libs ? "text-green border-b-2 md:border-b-0 md:border-l-2" : "text-slate" } md:px-5 pb-5 md:pb-0 text-center border-b md:border-b-0 md:border-l font-mono text-sm  h-14 flex items-center justify-center cursor-pointer`} onClick={showLibraries}>Front End Development Libraries</p>
+                        <p className= {`${ rwd ? "text-green border-b-2 md:border-b-0 md:border-l-2 " : "text-slate" } md:px-5 py-5 md:py-0 text-center border-b md:border-b-0 md:border-l font-mono text-sm  h-14 flex items-center justify-center cursor-pointer md:hover:border-l-2 `} onClick={showResponsive}><span className='md:hover:translate-x-1 md:duration-150'>Responsive Web Design</span></p>
+                        <p className={`${ jsdsa ? "text-green border-b-2 md:border-b-0 md:border-l-2 " : "text-slate" } px-5 pb-5 md:pb-0 text-center border-b md:border-b-0 md:border-l font-mono text-sm  h-14 flex items-center justify-center cursor-pointer md:hover:border-l-2 `} onClick={showJavascript}><span className='md:hover:translate-x-1 md:duration-150'>Javascript Algorithms & Data Structures</span></p>
+                        <p className={`${ libs ? "text-green border-b-2 md:border-b-0 md:border-l-2 " : "text-slate" } md:px-5 pb-5 md:pb-0 text-center border-b md:border-b-0 md:border-l font-mono text-sm  h-14 flex items-center justify-center cursor-pointer md:hover:border-l-2`} onClick={showLibraries}><span className=' md:hover:translate-x-1 md:duration-150'>Front End Development Libraries</span></p>
                     </div>
 
 

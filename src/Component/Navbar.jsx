@@ -52,18 +52,18 @@ export const Navbar = () => {
       <>
         <section > 
           <div className='hidden md:block '>
-            <div className={`fixed flex justify-center items-center font-mono space-x-16 h-20 w-screen z-50 tracking-widest backdrop-blur-md bg-navy/70 transition-all duration-500  ${show && 'hidden '}`} >
+            <div className={`fixed flex justify-center items-center font-mono space-x-16 h-20 w-screen z-50 tracking-widest backdrop-blur-md bg-navy/70 transition-all duration-300  ${show && '-translate-y-20 duration-300'}`} >
               <ol  className="flex space-x-16 list-decimal text-md ">
-                <li className="text-green"><a href="/#About" ><span className="text-lightest-slate hover:text-green">About</span></a></li>
-                <li className="text-green"><a href="/#Certification" ><span className="text-lightest-slate hover:text-green">Certificates</span></a></li>
-                <li className="text-green"><a href="/#Project" ><span className="text-lightest-slate hover:text-green">Projects</span></a></li>
-                <li className="text-green"><a href="/#Contact" ><span className="text-lightest-slate hover:text-green">Contact</span></a></li>
+                <li className="text-green"><a href="/#About" className='transition-all duration-300'><span className="text-lightest-slate hover:text-green ">About</span></a></li>
+                <li className="text-green"><a href="/#Certification" className='transition-all duration-300'><span className="text-lightest-slate hover:text-green ">Certificates</span></a></li>
+                <li className="text-green"><a href="/#Project" className='transition-all duration-300'><span className="text-lightest-slate hover:text-green ">Projects</span></a></li>
+                <li className="text-green"><a href="/#Contact" className='transition-all duration-300' ><span className="text-lightest-slate hover:text-green ">Contact</span></a></li>
               </ol>
               <div className="relative h-10 w-24 bg-green rounded-md "><a className="alsolute  bg-[#0a192f] h-10 w-24 border text-green grid place-content-center font-mono rounded-md transition-all hover:-translate-x-1 hover:-translate-y-1 duration-150" href={pdf} rel="noopener noreferrer" target="_blank">Resume</a></div>
             </div>
           </div> 
         
-          <div className={`fixed bg-navy h-20 flex items-center justify-end font-mono w-full md:hidden tracking-widest backdrop-blur-md bg-navy/70 z-10 ${show && 'hidden'}`} > 
+          <div className={`fixed bg-navy h-20 flex items-center justify-end font-mono w-full md:hidden tracking-widest backdrop-blur-md bg-navy/70 z-10 transition-all duration-300 ${show && '-translate-y-20 duration-300'}`} > 
             
             <button type="button" className='me-10 cursor-pointer text-green flex items-center h-10 w-10 justify-center z-50' onClick={()=>{modal==true? setModal(false): setModal(true);}}>
             {!modal ? (
@@ -101,7 +101,7 @@ export const Navbar = () => {
                 )}
                 
             </button>
-            <div className={`absolute flex flex-col items-center justify-center bg-light-navy md:hidden h-screen w-[60%] right-0 top-0 shadow-2xl shadow-lightest-navy  ${!modal && 'hidden'}`}>
+            <div className={`absolute flex flex-col items-center justify-center bg-light-navy md:hidden h-screen w-[60%] right-0 top-0 shadow-2xl shadow-lightest-navy transition-all duration-300  ${!modal && 'translate-x-72 duration-300'}`}>
               <div className='flex flex-col items-center justify-start space-y-12 '>
                 
                 {/* Menu */}
