@@ -46,8 +46,6 @@ export const Navbar = () => {
       }
     }, [lastScrollY]);
 
-    
-
 
     return (
       <>
@@ -66,42 +64,34 @@ export const Navbar = () => {
         
           <div className={`fixed h-16 flex items-center justify-end font-mono w-full md:hidden tracking-widest backdrop-blur-md bg-navy/70 z-10 transition-all duration-300 shadow-md shadow-navy-shadow ${show && '-translate-y-full duration-300'}`} > 
             
-            <button type="button" className='me-10 cursor-pointer text-green flex items-center h-10 w-10 justify-center z-50' onClick={()=>{modal==true? setModal(false): setModal(true);}}>
+            <div className='me-10 flex items-center h-16 w-16 justify-center z-50' onClick={()=>{modal==true? setModal(false): setModal(true);}}>
             {!modal ? (
-                  <svg
-                    className="block h-10 w-10"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
+                  <svg className="ham hamRotate ham1 "  viewBox="0 0 100 100" width="80">
                     <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
+                          className="line top"
+                          d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                    <path
+                          className="line middle"
+                          d="m 30,50 h 40" />
+                    <path
+                          className="line bottom"
+                          d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
                   </svg>
                 ) : (
-                  <svg
-                    className="block h-10 w-10"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
+                  <svg className={`${modal && "active"} ham hamRotate ham1`} viewBox="0 0 100 100" width="80" >
                     <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
+                          className="line top"
+                          d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                    <path
+                          className="line middle"
+                          d="m 30,50 h 40" />
+                    <path
+                          className="line bottom"
+                          d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
                   </svg>
                 )}
                 
-            </button>
+            </div>
             <div className={`absolute flex flex-col items-center justify-center bg-light-navy md:hidden h-screen w-[60%] right-0 top-0 shadow-2xl shadow-navy-shadow transition-all duration-300  ${!modal && 'translate-x-80 duration-300'}`}>
               <div className='flex flex-col items-center justify-start space-y-12 '>
                 
