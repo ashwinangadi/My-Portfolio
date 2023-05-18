@@ -29,8 +29,9 @@ const App = () => {
         <Certification/>
         <Project/>
         <Contact/>
+        <Social/>
       </div>
-      <Social/>  
+        
     </>
   )
 }

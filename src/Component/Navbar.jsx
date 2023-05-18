@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import pdf from "./resume.pdf"
 import { IdContext } from './AppContext'
+import { Link } from 'react-scroll';
 
 
 import { FiGithub } from 'react-icons/fi';
@@ -52,18 +53,18 @@ export const Navbar = () => {
       <>
         <section > 
           <div className='hidden md:block '>
-            <div className={`fixed flex justify-center items-center font-mono space-x-16 h-20 w-screen z-50 tracking-widest backdrop-blur-md bg-navy/70 transition-all duration-300  ${show && '-translate-y-20 duration-300'}`} >
+            <div className={`fixed flex justify-center items-center font-mono space-x-16 h-16 w-screen z-50 tracking-widest backdrop-blur-md bg-navy/70 shadow-md shadow-navy-shadow transition-all duration-300  ${show && '-translate-y-full duration-300'}`} >
               <ol  className="flex space-x-16 list-decimal text-md ">
-                <li className="text-green"><a href="/#About" className='transition-all duration-300'><span className="text-lightest-slate hover:text-green ">About</span></a></li>
-                <li className="text-green"><a href="/#Certification" className='transition-all duration-300'><span className="text-lightest-slate hover:text-green ">Certificates</span></a></li>
-                <li className="text-green"><a href="/#Project" className='transition-all duration-300'><span className="text-lightest-slate hover:text-green ">Projects</span></a></li>
-                <li className="text-green"><a href="/#Contact" className='transition-all duration-300' ><span className="text-lightest-slate hover:text-green ">Contact</span></a></li>
+                <li className="text-green cursor-pointer"><Link to="About" spy={true} smooth={true} offset={0} duration={500}><span className="text-lightest-slate hover:text-green ">About</span></Link></li>
+                <li className="text-green cursor-pointer"><Link to="Certification" spy={true} smooth={true} offset={0} duration={500}><span className="text-lightest-slate hover:text-green ">Certificates</span></Link></li>
+                <li className="text-green cursor-pointer"><Link to="Project" spy={true} smooth={true} offset={0} duration={500}><span className="text-lightest-slate hover:text-green ">Projects</span></Link></li>
+                <li className="text-green cursor-pointer"><Link to="Contact" spy={true} smooth={true} offset={0} duration={500}><span className="text-lightest-slate hover:text-green ">Contact</span></Link></li>
               </ol>
               <div className="relative h-10 w-24 bg-green rounded-md "><a className="alsolute  bg-[#0a192f] h-10 w-24 border text-green grid place-content-center font-mono rounded-md transition-all hover:-translate-x-1 hover:-translate-y-1 duration-150" href={pdf} rel="noopener noreferrer" target="_blank">Resume</a></div>
             </div>
           </div> 
         
-          <div className={`fixed bg-navy h-20 flex items-center justify-end font-mono w-full md:hidden tracking-widest backdrop-blur-md bg-navy/70 z-10 transition-all duration-300 ${show && '-translate-y-20 duration-300'}`} > 
+          <div className={`fixed h-16 flex items-center justify-end font-mono w-full md:hidden tracking-widest backdrop-blur-md bg-navy/70 z-10 transition-all duration-300 shadow-md shadow-navy-shadow ${show && '-translate-y-full duration-300'}`} > 
             
             <button type="button" className='me-10 cursor-pointer text-green flex items-center h-10 w-10 justify-center z-50' onClick={()=>{modal==true? setModal(false): setModal(true);}}>
             {!modal ? (
@@ -101,15 +102,15 @@ export const Navbar = () => {
                 )}
                 
             </button>
-            <div className={`absolute flex flex-col items-center justify-center bg-light-navy md:hidden h-screen w-[60%] right-0 top-0 shadow-2xl shadow-lightest-navy transition-all duration-300  ${!modal && 'translate-x-72 duration-300'}`}>
+            <div className={`absolute flex flex-col items-center justify-center bg-light-navy md:hidden h-screen w-[60%] right-0 top-0 shadow-2xl shadow-navy-shadow transition-all duration-300  ${!modal && 'translate-x-80 duration-300'}`}>
               <div className='flex flex-col items-center justify-start space-y-12 '>
                 
                 {/* Menu */}
                 <ul className='list-decimal flex flex-col justify-center items-center space-y-10 text-sm list-inside font-mono font-semibold' >
-                  <li className="text-green text-center"  onClick={()=>modal==true? setModal(false): setModal(true)}><a href="/#About" ><span className="text-lightest-slate hover:text-green block">About</span></a></li>
-                  <li className="text-green text-center" onClick={()=>modal==true? setModal(false): setModal(true)}><a href="/#Certification" ><span className="text-lightest-slate hover:text-green block">Certificates</span></a></li>
-                  <li className="text-green text-center" onClick={()=>modal==true? setModal(false): setModal(true)}><a href="/#Project" ><span className="text-lightest-slate hover:text-green block">Projects</span></a></li>
-                  <li className="text-green text-center" onClick={()=>modal==true? setModal(false): setModal(true)}><a href="/#Contact" ><span className="text-lightest-slate hover:text-green block">Contact</span></a></li>
+                  <li className="text-green text-center"  onClick={()=>modal==true? setModal(false): setModal(true)}><Link to="About" spy={true} smooth={true} offset={0} duration={500}><span className="text-lightest-slate hover:text-green block">About</span></Link></li>
+                  <li className="text-green text-center" onClick={()=>modal==true? setModal(false): setModal(true)}><Link to="Certification" spy={true} smooth={true} offset={0} duration={500}><span className="text-lightest-slate hover:text-green block">Certificates</span></Link></li>
+                  <li className="text-green text-center" onClick={()=>modal==true? setModal(false): setModal(true)}><Link to="Project" spy={true} smooth={true} offset={0} duration={500}><span className="text-lightest-slate hover:text-green block">Projects</span></Link></li>
+                  <li className="text-green text-center" onClick={()=>modal==true? setModal(false): setModal(true)}><Link to="Contact" spy={true} smooth={true} offset={0} duration={500}><span className="text-lightest-slate hover:text-green block">Contact</span></Link></li>
                 </ul>
 
                 {/* Resume button */}
@@ -125,13 +126,13 @@ export const Navbar = () => {
                   <div className="hover:text-green hover:-translate-y-2 duration-150" onClick={()=> alert(" Call : (+91) 7899599229")}><FiPhone className='h-6 w-6'/></div>
                 
                 <div className=" border h-28 w-0 text-center mt-48 hidden lg:block" style={{writingMode:"vertical-rl"}}></div>
-            </div>
               </div>
             </div>
           </div>
-        </section> 
-      </>
-    )
+        </div>
+      </section> 
+    </>
+  )
   }
 
   

@@ -26,7 +26,7 @@ export const Certification = () => {
 
     return (
       <>
-        <section id="Certification" className="element container mx-auto h-full flex items-center justify-center max-w-3xl px-5 md:px-0 py-20 ">
+        <section id="Certification" className="container mx-auto h-full flex items-center justify-center max-w-3xl px-5 md:px-0 py-20 ">
             <div className="flex flex-col">
                 <div className="text-base font-sans mb-10 flex items-center">
                     <h1 className="text-green text-xl md:text-2xl font-mono grid place-self-end">02.</h1>
@@ -47,7 +47,7 @@ export const Certification = () => {
                     <div className="text-blue h-full w-full md:px-5">
 
                         {/* Responsive WD */}
-                        <section className={`pt-4 ${!rwd && "hidden"} `}  id='RWD'>
+                        <div className={`pt-4 ${!rwd && "hidden"} `}  id='RWD'>
                             <h1 className="text-xl font-medium leading-snug mb-2 text-green font-sans hover:underline decoration-from-font underline-offset-4"><a href="https://www.freecodecamp.org/certification/Ashwin_Angadi/responsive-web-design" target="_blank" rel="noreferrer">Responsive Web Design @ FreeCodeCamp.org</a></h1>
                             <h2 className="mb-6 text-lightest-slate font-mono text-sm">+300 hours | November-2022</h2>
                             <ul className="relative list-disc pl-7 leading-snug font-sans antialiased text-justify">
@@ -55,10 +55,10 @@ export const Certification = () => {
                                 <li className="mb-4 text-green"><span className='text-slate'>First, I built a cat photo app to learn the basics of HTML and CSS. Later, I learned modern techniques like CSS variables by building a penguin, and best practices for accessibility by building a quiz site.</span></li>
                                 <li className=" text-green"><span className='text-slate'>Finally, I learned how to make webpages that respond to different screen sizes by building a photo gallery with Flexbox, and a magazine article layout with CSS Grid.</span></li>
                             </ul>
-                        </section>
+                        </div>
                         
                         {/* Javascript */}
-                        <section className={`pt-4 ${!jsdsa && "hidden"}`} id='JSDSA'>
+                        <div className={`pt-4 ${!jsdsa && "hidden"}`} id='JSDSA'>
                             <h1 className="text-xl font-medium leading-snug mb-2 text-green font-sans hover:underline decoration-from-font underline-offset-4"><a href="https://www.freecodecamp.org/certification/Ashwin_Angadi/javascript-algorithms-and-data-structures" target="_blank" rel="noreferrer">Javascript Algorithms & Data Structures  @ FreeCodeCamp.org</a></h1>
                             <h2 className="mb-6 text-lightest-slate font-mono text-sm">+300 hours | March-2023</h2>
                             <ul className="relative list-disc pl-7 leading-snug font-sans antialiased text-justify">
@@ -66,10 +66,10 @@ export const Certification = () => {
                                 <li className="mb-4 text-green"><span className='text-slate'>Once I have the fundamentals down, I applied that knowledge by creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station.</span></li>
                                 <li className=" text-green"><span className='text-slate'>Along the way, I also learned two important programming styles or paradigms: Object Oriented Programming (OOP) and Functional Programming (FP).</span></li>
                             </ul>
-                        </section>
+                        </div>
                         
                         {/* Libs */}
-                        <section className={`pt-4 ${!libs && "hidden"}`} id='LIBS'>
+                        <div className={`pt-4 ${!libs && "hidden"}`} id='LIBS'>
                             <h1 className="text-xl font-medium leading-snug mb-2 text-green font-sans hover:underline decoration-from-font underline-offset-4"><a href="https://www.freecodecamp.org/certification/Ashwin_Angadi/front-end-development-libraries" target="_blank" rel="noreferrer">Front End Development Libraries @ FreeCodeCamp.org</a></h1>
                             <h2 className="mb-6 text-lightest-slate font-mono text-sm">+300 hours | April-2023</h2>
                             <ul className="relative list-disc pl-7 leading-snug font-sans antialiased  text-justify">
@@ -77,7 +77,7 @@ export const Certification = () => {
                                 <li className="mb-4 text-green"><span className='text-slate'>In the Front End Development Libraries Certification, I learned how to style the site quickly with Bootstrap. I also learned how to add logic to the CSS styles and extend them with Sass.</span></li>
                                 <li className=" text-green"><span className='text-slate'>Later, I built a shopping cart and other applications to learn how to create powerful Single Page Applications (SPAs) with React and Redux.</span></li>
                             </ul>
-                        </section>
+                        </div>
                         
                     </div>
 
