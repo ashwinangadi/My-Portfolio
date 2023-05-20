@@ -51,7 +51,7 @@ export const Navbar = () => {
       <>
         <section > 
           <div className='hidden md:block '>
-            <div className={`fixed flex justify-center items-center font-mono space-x-16 h-16 w-screen z-50 tracking-widest backdrop-blur-md bg-navy/70 shadow-md shadow-navy-shadow transition-all duration-300  ${show && '-translate-y-full duration-300'}`} >
+            <div className={`fixed flex justify-center items-center font-mono space-x-16 h-16 w-screen z-50 tracking-widest backdrop-blur-md bg-navy/70 shadow-md shadow-navy-shadow transition-all duration-300  ${show && '-translate-y-full duration-300'} ${lastScrollY > 0 ? "shadow-md shadow-navy-shadow" : "shadow-none"}`} >
               <ol  className="flex space-x-16 list-decimal text-md ">
                 <li className="text-green cursor-pointer"><Link to="About" spy={true} smooth={true} offset={0} duration={500}><span className="text-lightest-slate hover:text-green ">About</span></Link></li>
                 <li className="text-green cursor-pointer"><Link to="Certification" spy={true} smooth={true} offset={0} duration={500}><span className="text-lightest-slate hover:text-green ">Certificates</span></Link></li>
@@ -62,7 +62,7 @@ export const Navbar = () => {
             </div>
           </div> 
         
-          <div className={`fixed h-16 flex items-center justify-end font-mono w-full md:hidden tracking-widest backdrop-blur-md bg-navy/70 z-10 transition-all duration-300 shadow-md shadow-navy-shadow ${show && '-translate-y-full duration-300'}`} > 
+          <div className={`fixed h-16 flex items-center justify-end font-mono w-full md:hidden tracking-widest backdrop-blur-md bg-navy/70 z-10 transition-all duration-300 shadow-md shadow-navy-shadow ${show && '-translate-y-full duration-300'} ${lastScrollY > 0 ? "shadow-md shadow-navy-shadow" : "shadow-none"}`} > 
             
             <div className='me-10 flex items-center h-16 w-16 justify-center z-50' onClick={()=>{modal==true? setModal(false): setModal(true);}}>
             {!modal ? (
