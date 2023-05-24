@@ -4,26 +4,8 @@ import { useState } from 'react'
 
 export const Certification = () => {
   
-    const [rwd, setRwd] = useState(true)
-    const [jsdsa, setJsdsa] = useState(false)
-    const [libs, setLibs] = useState(false)
-
-    const showResponsive = () =>{
-        setRwd(true);
-        setJsdsa(false)
-        setLibs(false)
-    }
-    const showJavascript = () =>{
-        setRwd(false);
-        setJsdsa(true)
-        setLibs(false)
-    }
-    const showLibraries = () =>{
-        setRwd(false);
-        setJsdsa(false)
-        setLibs(true)
-    }
-
+    const [show, setShow] = useState(0)
+    
     return (
       <>
         <section id="Certification" className="container mx-auto h-full flex items-center justify-center max-w-3xl px-5 md:px-0 py-20 ">
@@ -33,21 +15,21 @@ export const Certification = () => {
                     <h2 className="mx-2 text-2xl md:text-3xl text-lightest-slate font-bold">Certificates I Earned</h2> 
                     <h3 className="ml-2 border border-lightest-navy w-[11%] md:w-[40%]"> </h3>
                 </div>
-                <div className="flex flex-col md:flex-row w-full">
+                <div className="flex flex-col md:flex-row w-full h-full md:h-96">
 
                     {/* Nav section */}
-                    <div className=" md:w-[45%] h-full md:border-l-1 flex md:flex-col">
-                        <p className= {`${ rwd ? "text-green border-b-2 md:border-b-0 md:border-l-2 " : "text-slate" } md:px-5 py-5 md:py-0 text-center border-b md:border-b-0 md:border-l font-mono text-sm  h-14 flex items-center justify-center cursor-pointer md:hover:border-l-2 `} onClick={showResponsive}><span className='md:hover:translate-x-1 md:duration-150'>Responsive Web Design</span></p>
-                        <p className={`${ jsdsa ? "text-green border-b-2 md:border-b-0 md:border-l-2 " : "text-slate" } px-5 pb-5 md:pb-0 text-center border-b md:border-b-0 md:border-l font-mono text-sm  h-14 flex items-center justify-center cursor-pointer md:hover:border-l-2 `} onClick={showJavascript}><span className='md:hover:translate-x-1 md:duration-150'>Javascript Algorithms & Data Structures</span></p>
-                        <p className={`${ libs ? "text-green border-b-2 md:border-b-0 md:border-l-2 " : "text-slate" } md:px-5 pb-5 md:pb-0 text-center border-b md:border-b-0 md:border-l font-mono text-sm  h-14 flex items-center justify-center cursor-pointer md:hover:border-l-2`} onClick={showLibraries}><span className=' md:hover:translate-x-1 md:duration-150'>Front End Development Libraries</span></p>
-                    </div>
+                    <ul className=" md:w-[45%] md:h-full md:border-l-1 flex md:flex-col">
+                        <li className= {`${ show === 0 ? "text-green border-b-2 md:border-b-0 md:border-l-2 duration-300 delay-150 ease-in" : "text-slate " } md:px-5 py-5 md:py-0 text-center border-b md:border-b-0 md:border-l font-mono text-sm  h-14 flex items-center justify-center cursor-pointer  `} onClick={()=>setShow(0)}><span className='md:hover:translate-x-1 md:duration-150'>Responsive Web Design</span></li>
+                        <li className={`${ show === 1 ? "text-green border-b-2 md:border-b-0 md:border-l-2 duration-300 delay-150 ease-in" : "text-slate" } px-5 pb-5 md:pb-0 text-center border-b md:border-b-0 md:border-l font-mono text-sm  h-14 flex items-center justify-center cursor-pointer  `} onClick={()=>setShow(1)}><span className='md:hover:translate-x-1 md:duration-150'>Javascript Algorithms & Data Structures</span></li>
+                        <li className={`${ show === 2 ? "text-green border-b-2 md:border-b-0 md:border-l-2 duration-300 delay-150 ease-in" : "text-slate" } md:px-5 pb-5 md:pb-0 text-center border-b md:border-b-0 md:border-l font-mono text-sm  h-14 flex items-center justify-center cursor-pointer `} onClick={()=>setShow(2)}><span className=' md:hover:translate-x-1 md:duration-150'>Front End Development Libraries</span></li>
+                    </ul>
 
 
                     {/* Nav page section */}
                     <div className="text-blue h-full w-full md:px-5">
 
                         {/* Responsive WD */}
-                        <div className={`pt-4 ${!rwd && "hidden"} `}  id='RWD'>
+                        <div className={` pt-4 ${show === 0 ? "opacity-100 duration-500 delay-150 ease-in" : "absolute opacity-0"}`}  id='RWD'>
                             <h1 className="text-xl font-medium leading-snug mb-2 text-green font-sans hover:underline decoration-from-font underline-offset-4"><a href="https://www.freecodecamp.org/certification/Ashwin_Angadi/responsive-web-design" target="_blank" rel="noreferrer">Responsive Web Design @ FreeCodeCamp.org</a></h1>
                             <h2 className="mb-6 text-lightest-slate font-mono text-sm">+300 hours | November-2022</h2>
                             <ul className="relative list-disc pl-7 leading-snug font-sans antialiased text-justify">
@@ -58,7 +40,7 @@ export const Certification = () => {
                         </div>
                         
                         {/* Javascript */}
-                        <div className={`pt-4 ${!jsdsa && "hidden"}`} id='JSDSA'>
+                        <div className={` pt-4 ${show === 1 ? "opacity-100 duration-500 delay-150 ease-in" : "absolute opacity-0"}`} id='JSDSA'>
                             <h1 className="text-xl font-medium leading-snug mb-2 text-green font-sans hover:underline decoration-from-font underline-offset-4"><a href="https://www.freecodecamp.org/certification/Ashwin_Angadi/javascript-algorithms-and-data-structures" target="_blank" rel="noreferrer">Javascript Algorithms & Data Structures  @ FreeCodeCamp.org</a></h1>
                             <h2 className="mb-6 text-lightest-slate font-mono text-sm">+300 hours | March-2023</h2>
                             <ul className="relative list-disc pl-7 leading-snug font-sans antialiased text-justify">
@@ -69,7 +51,7 @@ export const Certification = () => {
                         </div>
                         
                         {/* Libs */}
-                        <div className={`pt-4 ${!libs && "hidden"}`} id='LIBS'>
+                        <div className={`  pt-4 ${show === 2 ? "opacity-100 duration-500 delay-150 ease-in" : "absolute opacity-0"}`} id='LIBS'>
                             <h1 className="text-xl font-medium leading-snug mb-2 text-green font-sans hover:underline decoration-from-font underline-offset-4"><a href="https://www.freecodecamp.org/certification/Ashwin_Angadi/front-end-development-libraries" target="_blank" rel="noreferrer">Front End Development Libraries @ FreeCodeCamp.org</a></h1>
                             <h2 className="mb-6 text-lightest-slate font-mono text-sm">+300 hours | April-2023</h2>
                             <ul className="relative list-disc pl-7 leading-snug font-sans antialiased  text-justify">
