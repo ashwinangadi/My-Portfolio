@@ -16,7 +16,7 @@ export const Social = () => {
                 <div className="hover:text-green hover:-translate-y-1 duration-150"><a href="https://github.com/ashwinangadi" aria-label="GitHub" target="_blank" rel="noreferrer"><FiGithub className='h-6 w-6'/></a></div>
                 <div className="hover:text-green hover:-translate-y-1 duration-150"><a href="https://www.freecodecamp.org/Ashwin_Angadi" aria-label="FreeCodeCamp" target="_blank" rel="noreferrer"><FaFreeCodeCamp className='h-6 w-6'/></a></div>
                 <div className="hover:text-green hover:-translate-y-1 duration-150"><a href="https://twitter.com/iamashwinangadi" aria-label="Twitter" target="_blank" rel="noreferrer"><FiTwitter className='h-6 w-6'/></a></div>
-                <div className="hover:text-green hover:-translate-y-1 duration-150 cursor-pointer" onClick={()=> alert(" Call : (+91) 7899599229")}><FiPhone className='h-6 w-6'/></div>
+                <div className="hover:text-green hover:-translate-y-1 duration-150 md:cursor-pointer" onClick={()=> alert(" Call : (+91) 7899599229")}><FiPhone className='h-6 w-6'/></div>
                 
                 <div className=" border h-28 w-0 text-center mt-48 hidden lg:block" style={{writingMode:"vertical-rl"}}></div>
             </div>
