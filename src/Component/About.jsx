@@ -20,26 +20,26 @@ export const About = () => {
             </h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-6 md:gap-4 ">
-            <div className="col-span-4">
-              <p className="  font-sans text-slate mb-2">
+            <div className="col-span-4 me-5">
+              <p className="  font-sans text-slate mb-2 text-justify">
                 Hi there, I&apos;m Ashwin, a frontend developer in building
                 user-friendly and visually appealing websites. With a passion
                 for web development, I am always looking to stay up-to-date with
                 the latest technologies and trends in the industry.{" "}
               </p>
               {/* <p className="  font-sans text-slate mb-2">My expertise lies in HTML, CSS, JavaScript, React, and other front-end development tools. I take a user-centered approach to web design, ensuring that every website I create is optimized for usability and accessibility. I have a strong eye for design and enjoy working collaboratively with designers and other developers to create beautiful and functional websites. </p> */}
-              <p className="  font-sans text-slate mb-2">
+              <p className="  font-sans text-slate mb-2 text-justify">
                 When I&apos;m not coding, you can find me swimming, hiking,
                 playing video games or travelling to beautiful destinations.{" "}
               </p>
 
-              <p className=" font-sans text-slate mb-2">
+              <p className=" font-sans text-slate mb-2 text-justify">
                 I&apos;m always looking for opportunities to work with those who
                 are willing to share their knowledge as much as I want to learn.
                 At the end of the day, my primary goal is to create something
                 beautiful with people that bring out the best in me.
               </p>
-              <p className=" font-sans text-slate">
+              <p className=" font-sans text-slate text-justify">
                 Here are a few technologies I&apos;ve been working with
                 recently:
               </p>
