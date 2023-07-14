@@ -48,80 +48,76 @@ export const Navbar = () => {
       <section>
         <div className="hidden md:block ">
           <div
-            className={`fixed flex justify-center items-center font-mono space-x-16 h-16 w-screen z-50 tracking-widest backdrop-blur-md bg-navy/70 shadow-md shadow-navy-shadow transition-all duration-300  ${
+            className={`fixed flex justify-center items-center font-mono gap-10 h-16 w-screen z-50 tracking-widest backdrop-blur-md bg-navy/70 shadow-md shadow-navy-shadow transition-all duration-300  ${
               show && "-translate-y-full duration-300"
             } ${
               lastScrollY > 0 ? "shadow-md shadow-navy-shadow" : "shadow-none"
             }`}
           >
-            <ol className="flex space-x-16 list-decimal text-md ">
-              {/* {navItems?.map((item,index)=>{
-                  return(
-                <li key={index} className="text-green cursor-pointer"><Link to={item} spy={true} smooth={true} offset={0} duration={500}><span className="text-lightest-slate hover:text-green ">{item}</span></Link></li>
-                  )
-                })} */}
-              <li className="text-green cursor-pointer">
-                <Link
-                  to="About"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={500}
+              <ol className="flex space-x-16 list-decimal text-md ">
+                
+                <li className="text-green cursor-pointer">
+                  <Link
+                    to="About"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                  >
+                    <span className="text-lightest-slate hover:text-green ">
+                      About
+                    </span>
+                  </Link>
+                </li>
+                <li className="text-green cursor-pointer">
+                  <Link
+                    to="Certification"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                  >
+                    <span className="text-lightest-slate hover:text-green ">
+                      Certificates
+                    </span>
+                  </Link>
+                </li>
+                <li className="text-green cursor-pointer">
+                  <Link
+                    to="Project"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                  >
+                    <span className="text-lightest-slate hover:text-green ">
+                      Projects
+                    </span>
+                  </Link>
+                </li>
+                <li className="text-green cursor-pointer">
+                  <Link
+                    to="Contact"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                  >
+                    <span className="text-lightest-slate hover:text-green ">
+                      Contact
+                    </span>
+                  </Link>
+                </li>
+              </ol>
+              <div className="relative h-10 w-24 bg-green rounded-md ">
+                <a
+                  className="alsolute  bg-[#0a192f] h-10 w-24 border text-green grid place-content-center font-mono rounded-md transition-all hover:-translate-x-1 hover:-translate-y-1 duration-150"
+                  href={pdf}
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
-                  <span className="text-lightest-slate hover:text-green ">
-                    About
-                  </span>
-                </Link>
-              </li>
-              <li className="text-green cursor-pointer">
-                <Link
-                  to="Certification"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={500}
-                >
-                  <span className="text-lightest-slate hover:text-green ">
-                    Certificates
-                  </span>
-                </Link>
-              </li>
-              <li className="text-green cursor-pointer">
-                <Link
-                  to="Project"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={500}
-                >
-                  <span className="text-lightest-slate hover:text-green ">
-                    Projects
-                  </span>
-                </Link>
-              </li>
-              <li className="text-green cursor-pointer">
-                <Link
-                  to="Contact"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={500}
-                >
-                  <span className="text-lightest-slate hover:text-green ">
-                    Contact
-                  </span>
-                </Link>
-              </li>
-            </ol>
-            <div className="relative h-10 w-24 bg-green rounded-md ">
-              <a
-                className="alsolute  bg-[#0a192f] h-10 w-24 border text-green grid place-content-center font-mono rounded-md transition-all hover:-translate-x-1 hover:-translate-y-1 duration-150"
-                href={pdf}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Resume
-              </a>
+                  Resume
+                </a>
             </div>
           </div>
         </div>
@@ -138,7 +134,7 @@ export const Navbar = () => {
             onClick={() => {
               modal == true ? setModal(false) : setModal(true);
             }}
-          >
+          > 
             {!modal ? (
               <svg
                 className="ham hamRotate ham1 "

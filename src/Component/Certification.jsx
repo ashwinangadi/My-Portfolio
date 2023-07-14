@@ -33,7 +33,7 @@ export const Certification = () => {
                       show === index
                         ? "text-green border-b-2 md:border-b-0 md:border-l-2 duration-300  ease-in"
                         : "text-slate "
-                    } md:px-5 pb-5 md:pb-0 text-center border-b md:border-b-0 md:border-l font-mono text-sm  h-14 flex items-center justify-center md:cursor-pointer  `}
+                    } md:px-5 pb-5 md:pb-0 text-center border-b md:border-b-0 md:border-l font-mono text-sm  h-14 flex items-center justify-center md:cursor-pointer `}
                     onClick={() => setShow(index)}
                   >
                     <span className="md:hover:translate-x-1 md:duration-150">
