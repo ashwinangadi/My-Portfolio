@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from "react";
-import pdf from "./resume.pdf";
+import resume from "./resume.pdf";
 import { IdContext } from "./AppContext";
 import { Link } from "react-scroll";
 // import { navItems } from './constants/Constant';
@@ -112,7 +112,7 @@ export const Navbar = () => {
               <div className="relative h-10 w-24 bg-green rounded-md ">
                 <a
                   className="alsolute  bg-[#0a192f] h-10 w-24 border text-green grid place-content-center font-mono rounded-md transition-all hover:-translate-x-1 hover:-translate-y-1 duration-150"
-                  href={pdf}
+                  href={resume}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -255,7 +255,7 @@ export const Navbar = () => {
               <div className="relative h-14 w-36 bg-green rounded-md ">
                 <a
                   className="alsolute z-10 bg-[#0a192f] h-14 w-36 border text-green grid place-content-center font-mono rounded-md transition-all hover:-translate-x-1 hover:-translate-y-1 duration-150"
-                  href={pdf}
+                  href={resume}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
