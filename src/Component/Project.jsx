@@ -65,6 +65,7 @@ export const Project = () => {
                 <li className="mr-4 md:mr-5 mb-1">Next.js</li>
                 <li className="mr-4 md:mr-5 mb-1">Typescript</li>
                 <li className="mr-4 md:mr-5 mb-1">TailwindCSS</li>
+                <li className="mr-4 md:mr-5 mb-1">Redux</li>
                 <li className=""> REST <span className="hidden md:inline">API</span></li>
               </ul>
               <div className="flex text-lightest-slate">
