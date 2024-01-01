@@ -61,7 +61,7 @@ export const Project = () => {
                 based on rental days, and make secure payments for a seamless
                 booking experience.
               </div>
-              <ul className="flex mb-2.5 mt-6 font-mono text-sm text-light-slate">
+              <ul className="flex mb-2.5 mt-6 font-mono text-sm text-light-slate flex-wrap">
                 <li className="mr-4 md:mr-5 mb-1">Next.js</li>
                 <li className="mr-4 md:mr-5 mb-1">Typescript</li>
                 <li className="mr-4 md:mr-5 mb-1">TailwindCSS</li>
@@ -126,7 +126,7 @@ export const Project = () => {
                 Developed and styled this web application that provides tasteful
                 recipes worldwide with the API provided by TheMealsDb.
               </div>
-              <ul className="flex md:justify-end  mb-2.5 mt-6 font-mono text-sm text-light-slate">
+              <ul className="flex md:justify-end  mb-2.5 mt-6 font-mono text-sm text-light-slate flex-wrap">
                 <li className="mr-5 mb-1">React.js</li>
                 <li className="mr-5 mb-1">TailwindCss</li>
                 <li className="mr-5 mb-1">Javascript</li>
@@ -194,7 +194,7 @@ export const Project = () => {
                 watchlist of companies with the information fetched from finnHub
                 API and representation of price data using APEXCHARTS API.
               </div>
-              <ul className="flex mb-2.5 mt-6 font-mono text-sm text-light-slate">
+              <ul className="flex mb-2.5 mt-6 font-mono text-sm text-light-slate flex-wrap">
                 <li className="mr-4 md:mr-5 mb-1">React.js</li>
                 <li className="mr-4 md:mr-5 mb-1">TailwindCSS</li>
                 <li className="mr-4 md:mr-5 mb-1">
@@ -263,7 +263,7 @@ export const Project = () => {
                 the team and then route them to the page where it shows the
                 members of the teams.
               </div>
-              <ul className="flex md:justify-end  mb-2.5 mt-6 font-mono text-sm text-light-slate">
+              <ul className="flex md:justify-end  mb-2.5 mt-6 font-mono text-sm text-light-slate flex-wrap">
                 <li className="mr-5 mb-1">React.js</li>
                 <li className="mr-5 mb-1">Bootstrap</li>
                 <li className="">Javascript</li>

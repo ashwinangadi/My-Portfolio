@@ -21,7 +21,7 @@ export const About = () => {
             </h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-6 md:gap-4 ">
-            <div className="col-span-4 me-5">
+            <div className="col-span-4 md:me-5">
               <p className="  font-sans text-slate mb-2 text-justify">
                 Hi there, I&apos;m Ashwin, a frontend web developer in building
                 user-friendly and visually appealing websites. With a passion
