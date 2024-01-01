@@ -43,85 +43,67 @@ export const Navbar = () => {
     }
   }, [lastScrollY]);
 
+  const navItems = [
+    {
+      to: "About",
+      name: "About",
+    },
+    {
+      to: "Certification",
+      name: "Certificates",
+    },
+    {
+      to: "Project",
+      name: "Projects",
+    },
+    {
+      to: "Contact",
+      name: "Contact",
+    },
+  ];
+
   return (
     <>
       <section>
+        {/* Desktop Navbar */}
         <div className="hidden md:block ">
           <div
-            className={`fixed flex justify-center items-center font-mono gap-10 h-16 w-screen z-50 tracking-widest backdrop-blur-md bg-navy/70 shadow-md shadow-navy-shadow transition-all duration-300  ${
+            className={`fixed mx-auto flex justify-center ps-5 lg:ps-0 items-center font-mono gap-6 lg:gap-10 h-16 w-full z-50 tracking-widest backdrop-blur-md bg-navy/70 shadow-md shadow-navy-shadow transition-all duration-300  ${
               show && "-translate-y-full duration-300"
             } ${
               lastScrollY > 0 ? "shadow-md shadow-navy-shadow" : "shadow-none"
             }`}
           >
-              <ol className="flex space-x-16 list-decimal text-md ">
-                
-                <li className="text-green cursor-pointer">
+            <ol className="flex space-x-14 lg:space-x-16 list-decimal text-md ">
+              {navItems.map((item) => (
+                <li key={item.to} className="text-green cursor-pointer">
                   <Link
-                    to="About"
+                    to={item.to}
                     spy={true}
                     smooth={true}
                     offset={0}
                     duration={500}
+                    className="text-lightest-slate hover:text-green "
                   >
-                    <span className="text-lightest-slate hover:text-green ">
-                      About
-                    </span>
+                    {item.name}
                   </Link>
                 </li>
-                <li className="text-green cursor-pointer">
-                  <Link
-                    to="Certification"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
-                  >
-                    <span className="text-lightest-slate hover:text-green ">
-                      Certificates
-                    </span>
-                  </Link>
-                </li>
-                <li className="text-green cursor-pointer">
-                  <Link
-                    to="Project"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
-                  >
-                    <span className="text-lightest-slate hover:text-green ">
-                      Projects
-                    </span>
-                  </Link>
-                </li>
-                <li className="text-green cursor-pointer">
-                  <Link
-                    to="Contact"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
-                  >
-                    <span className="text-lightest-slate hover:text-green ">
-                      Contact
-                    </span>
-                  </Link>
-                </li>
-              </ol>
-              <div className="relative h-10 w-24 bg-green rounded-md ">
-                <a
-                  className="alsolute  bg-[#0a192f] h-10 w-24 border text-green grid place-content-center font-mono rounded-md transition-all hover:-translate-x-1 hover:-translate-y-1 duration-150"
-                  href={resume}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Resume
-                </a>
+              ))}
+            </ol>
+            <div className="relative h-10 w-24 bg-green rounded-md ">
+              <a
+                className="alsolute  bg-[#0a192f] h-10 w-24 border text-green grid place-content-center font-mono rounded-md transition-all hover:-translate-x-1 hover:-translate-y-1 duration-150"
+                href={resume}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Resume
+              </a>
             </div>
           </div>
         </div>
 
+        {/* Mobile Navbar */}
         <div
           className={`fixed h-16 flex items-center justify-end font-mono w-full md:hidden tracking-widest backdrop-blur-md bg-navy/70 z-10 transition-all duration-300 shadow-md shadow-navy-shadow ${
             show && "-translate-y-full duration-300"
@@ -130,11 +112,11 @@ export const Navbar = () => {
           }`}
         >
           <div
-            className="me-10 flex items-center h-16 w-16 justify-center z-50"
+            className="me-[5%] flex items-center h-16 w-16 justify-center z-50"
             onClick={() => {
               modal == true ? setModal(false) : setModal(true);
             }}
-          > 
+          >
             {!modal ? (
               <svg
                 className="ham hamRotate ham1 "
@@ -169,86 +151,35 @@ export const Navbar = () => {
               </svg>
             )}
           </div>
+
           <div
-            className={`absolute flex flex-col items-center justify-center bg-light-navy md:hidden h-screen w-[60%] right-0 top-0 shadow-2xl shadow-navy-shadow transition-all duration-300  ${
+            className={`absolute flex flex-col items-center justify-center bg-light-navy md:hidden h-screen w-[280px] right-0 top-0 shadow-2xl shadow-navy-shadow transition-all duration-300  ${
               !modal && "translate-x-80 duration-300"
             }`}
           >
-            <div className="flex flex-col items-center justify-start space-y-12 ">
+            <div className="flex flex-col items-center justify-start space-y-12">
               {/* Menu */}
               <ul className="list-decimal flex flex-col justify-center items-center space-y-10 text-sm list-inside font-mono font-semibold">
-                <li
-                  className="text-green text-center"
-                  onClick={() =>
-                    modal == true ? setModal(false) : setModal(true)
-                  }
-                >
-                  <Link
-                    to="About"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
+                {navItems.map((item) => (
+                  <li
+                    key={item.to}
+                    className="text-green text-center"
+                    onClick={() =>
+                      modal == true ? setModal(false) : setModal(true)
+                    }
                   >
-                    <span className="text-lightest-slate hover:text-green block">
-                      About
-                    </span>
-                  </Link>
-                </li>
-                <li
-                  className="text-green text-center"
-                  onClick={() =>
-                    modal == true ? setModal(false) : setModal(true)
-                  }
-                >
-                  <Link
-                    to="Certification"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
-                  >
-                    <span className="text-lightest-slate hover:text-green block">
-                      Certificates
-                    </span>
-                  </Link>
-                </li>
-                <li
-                  className="text-green text-center"
-                  onClick={() =>
-                    modal == true ? setModal(false) : setModal(true)
-                  }
-                >
-                  <Link
-                    to="Project"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
-                  >
-                    <span className="text-lightest-slate hover:text-green block">
-                      Projects
-                    </span>
-                  </Link>
-                </li>
-                <li
-                  className="text-green text-center"
-                  onClick={() =>
-                    modal == true ? setModal(false) : setModal(true)
-                  }
-                >
-                  <Link
-                    to="Contact"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
-                  >
-                    <span className="text-lightest-slate hover:text-green block">
-                      Contact
-                    </span>
-                  </Link>
-                </li>
+                    <Link
+                      to={item.to}
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                      className="text-lightest-slate hover:text-green block"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
 
               {/* Resume button */}

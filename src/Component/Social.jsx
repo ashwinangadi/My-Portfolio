@@ -9,10 +9,10 @@ export const Social = () => {
     <>
       <section
         id="Social"
-        className=" lg:absolute text-light-slate flex flex-col justify-center  z-50"
+        className=" xl:absolute text-light-slate flex flex-col justify-center  z-50"
       >
-        <div className="lg:fixed lg:bottom-0 lg:left-20 flex lg:flex-col lg:items-center justify-around lg:justify-center lg:space-x-0 lg:space-y-8 mt-10 lg:mt-0 mb-16 lg:mb-0 font-bold">
-          <div className="hover:text-green hover:-translate-y-1 duration-150">
+        <div className="xl:fixed xl:bottom-0 xl:left-20 flex xl:flex-col xl:items-center justify-around xl:justify-center xl:space-x-0 xl:space-y-8 mt-10 xl:mt-0 mb-16 xl:mb-0 font-bold">
+          <span className="hover:text-green hover:-translate-y-1 duration-150">
             <a
               href="https://www.linkedin.com/in/ashwin-angadi/"
               aria-label="Linkedin"
@@ -21,8 +21,8 @@ export const Social = () => {
             >
               <FiLinkedin className="h-6 w-6" />
             </a>
-          </div>
-          <div className="hover:text-green hover:-translate-y-1 duration-150">
+          </span>
+          <span className="hover:text-green hover:-translate-y-1 duration-150">
             <a
               href="https://github.com/ashwinangadi"
               aria-label="GitHub"
@@ -31,8 +31,8 @@ export const Social = () => {
             >
               <FiGithub className="h-6 w-6" />
             </a>
-          </div>
-          <div className="hover:text-green hover:-translate-y-1 duration-150">
+          </span>
+          <span className="hover:text-green hover:-translate-y-1 duration-150">
             <a
               href="https://www.freecodecamp.org/Ashwin_Angadi"
               aria-label="FreeCodeCamp"
@@ -41,8 +41,8 @@ export const Social = () => {
             >
               <FaFreeCodeCamp className="h-6 w-6" />
             </a>
-          </div>
-          <div className="hover:text-green hover:-translate-y-1 duration-150">
+          </span>
+          <span className="hover:text-green hover:-translate-y-1 duration-150">
             <a
               href="https://twitter.com/iamashwinangadi"
               aria-label="Twitter"
@@ -51,20 +51,20 @@ export const Social = () => {
             >
               <FiTwitter className="h-6 w-6" />
             </a>
-          </div>
-          <div
+          </span>
+          <span
             className="hover:text-green hover:-translate-y-1 duration-150 md:cursor-pointer"
             onClick={() => alert(" Call : (+91) 7899599229")}
           >
             <FiPhone className="h-6 w-6" />
-          </div>
+          </span>
 
-          <div
-            className=" border h-28 w-0 text-center mt-48 hidden lg:block"
+          <span
+            className=" border h-28 w-0 text-center mt-48 hidden xl:block"
             style={{ writingMode: "vertical-rl" }}
-          ></div>
+          ></span>
         </div>
-        <div className="md:fixed bottom-0 right-20 flex flex-col items-center justify-center font-mono text-sm tracking-widest space-y-8 hidden lg:inline-flex">
+        <div className="md:fixed bottom-0 right-20 flex-col items-center justify-center font-mono text-sm tracking-widest space-y-8 hidden xl:inline-flex">
           <div
             className="hover:text-green hover:-translate-y-1 duration-150"
             style={{ writingMode: "vertical-rl" }}

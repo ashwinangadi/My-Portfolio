@@ -22,7 +22,7 @@ const App = () => {
   return (
     <>
       <Navbar/>
-      <div className={`relative container mx-auto ${modal && ""}`} >
+      <div className={`relative container mx-auto px-2 ${modal && ""}`} >
         
         <Name/>
         <About/> 
