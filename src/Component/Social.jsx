@@ -5,6 +5,28 @@ import { FiPhone } from "react-icons/fi";
 import { FaFreeCodeCamp } from "react-icons/fa";
 
 export const Social = () => {
+  const socials = [
+    {
+      name: "Linkedin",
+      icon: <FiLinkedin className="h-6 w-6" />,
+      link: "https://www.linkedin.com/in/ashwin-angadi/",
+    },
+    {
+      name: "Linkedin",
+      icon: <FiGithub className="h-6 w-6" />,
+      link: "https://github.com/ashwinangadi",
+    },
+    {
+      name: "FreeCodeCamp",
+      icon: <FaFreeCodeCamp className="h-6 w-6" />,
+      link: "https://www.freecodecamp.org/Ashwin_Angadi",
+    },
+    {
+      name: "Twitter",
+      icon: <FiTwitter className="h-6 w-6" />,
+      link: "https://twitter.com/iamashwinangadi",
+    },
+  ];
   return (
     <>
       <section
@@ -12,46 +34,22 @@ export const Social = () => {
         className=" xl:absolute text-light-slate flex flex-col justify-center  z-50"
       >
         <div className="xl:fixed xl:bottom-0 xl:left-20 flex xl:flex-col xl:items-center justify-around xl:justify-center xl:space-x-0 xl:space-y-8 mt-10 xl:mt-0 mb-16 xl:mb-0 font-bold">
-          <span className="hover:text-green hover:-translate-y-1 duration-150">
-            <a
-              href="https://www.linkedin.com/in/ashwin-angadi/"
-              aria-label="Linkedin"
-              target="_blank"
-              rel="noreferrer"
+          {socials.map((item) => (
+            <span
+              key={item.name}
+              className="hover:text-green hover:-translate-y-1 duration-150"
             >
-              <FiLinkedin className="h-6 w-6" />
-            </a>
-          </span>
-          <span className="hover:text-green hover:-translate-y-1 duration-150">
-            <a
-              href="https://github.com/ashwinangadi"
-              aria-label="GitHub"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FiGithub className="h-6 w-6" />
-            </a>
-          </span>
-          <span className="hover:text-green hover:-translate-y-1 duration-150">
-            <a
-              href="https://www.freecodecamp.org/Ashwin_Angadi"
-              aria-label="FreeCodeCamp"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaFreeCodeCamp className="h-6 w-6" />
-            </a>
-          </span>
-          <span className="hover:text-green hover:-translate-y-1 duration-150">
-            <a
-              href="https://twitter.com/iamashwinangadi"
-              aria-label="Twitter"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FiTwitter className="h-6 w-6" />
-            </a>
-          </span>
+              <a
+                href={item.link}
+                aria-label={item.name}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {item.icon}
+              </a>
+            </span>
+          ))}
+
           <span
             className="hover:text-green hover:-translate-y-1 duration-150 md:cursor-pointer"
             onClick={() => alert(" Call : (+91) 7899599229")}
